@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="index.html" target="_blank"><li>Главная</li></a>
+      <a href="xperia-customs.html" target="_blank"><li>Кастомные прошивки</li></a>
+      <a href="programs.html" target="_blank"><li>Программирование</li></a>
+      <a href="Images/construction.jpg" target="_blank"><li>Соц. Сети</li></a>
+    </ul>
+  </div>
+</nav>
+    <h1><center>Инструкция по разблокировке загрузчика Xperia X</center></h1>
+    <center><img src="Images/bootloader.jpg" alt="recovery"></center>
+    <center><p>Для разблокировки загрузчика нам понадобятся:</p></center>
+
+    <center><ul>
+      <p>Xperia X</p>
+      <p>Компьютер с Windows</p>
+      <p>Fastboot драйвера</p>
+    </ul></center>
+
+    <center><p>Этап 1. Для начала получите код разблокировки с сайта <a href="https://developer.sonymobile.com/unlockbootloader/unlock-yourboot-loader/">веб-сайта Sony</a>
+
+      <p>Этап 2. Активируйте OEM разблокировку в параметрах разработчика.</p>
+
+    <p>  
+      Этап 3. Загрузите инструменты Fastboot.
+    <p>  
+      Этап 4. Выключите Xperia и загрузите его в режим FastBoot.</p>
+    <p>  
+      Этап 5. Откройте командную строку и перейдите в каталог с файлами FastBoot.</p>
+    <p>  
+      Этап 6. Пропишите команду "fastboot -i 0x0fce oem unlock 0x[ваш код разблокировки]".</p>
+    <p>  
+      Этап 7. Включите Xperia X.</p>
+    <p>  
+      Готово!</p></center>
+<link href="Styles/style.css" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+  </body>
